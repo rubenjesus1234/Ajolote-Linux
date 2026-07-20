@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Buscar -->
+  <defs>
+    <linearGradient id="searchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A9A9A9"/>
+      <stop offset="100%" style="stop-color:#808080"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <circle cx="20" cy="20" r="12" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Lupa -->
+  <circle cx="18" cy="18" r="12" fill="none" stroke="url(#searchGrad)" stroke-width="3"/>
+  <circle cx="18" cy="18" r="8" fill="white" opacity="0.3"/>
+  
+  <!-- Mango -->
+  <line x1="27" y1="27" x2="40" y2="40" stroke="url(#searchGrad)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Brillo -->
+  <ellipse cx="14" cy="12" rx="4" ry="3" fill="white" opacity="0.5" transform="rotate(-30 14 12)"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Copiar -->
+  <defs>
+    <linearGradient id="copyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A9A9A9"/>
+      <stop offset="100%" style="stop-color:#808080"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="12" y="10" width="24" height="30" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papel trasero -->
+  <rect x="10" y="8" width="24" height="30" rx="2" fill="#E8E8E8" stroke="#A9A9A9" stroke-width="0.5"/>
+  
+  <!-- Papel delantero -->
+  <rect x="14" y="12" width="24" height="30" rx="2" fill="url(#copyGrad)" stroke="#808080" stroke-width="0.5"/>
+  
+  <!-- Líneas -->
+  <line x1="18" y1="20" x2="34" y2="20" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="18" y1="24" x2="30" y2="24" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="18" y1="28" x2="32" y2="28" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="18" y1="32" x2="26" y2="32" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Brillo -->
+  <rect x="16" y="14" width="20" height="4" rx="2" fill="white" opacity="0.3"/>
+</svg>

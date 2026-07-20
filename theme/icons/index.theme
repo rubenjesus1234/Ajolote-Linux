@@ -1,0 +1,25 @@
+[Icon Theme]
+Name=Ajolote
+Comment=Tema de iconos Ajolote Linux - Rosa pastel con gris mate
+Inherits=Adwaita
+Directories=48x48/places,48x48/apps,48x48/mimetypes,48x48/status
+
+[48x48/places]
+Size=48
+Context=Places
+Type=Scalable
+
+[48x48/apps]
+Size=48
+Context=Applications
+Type=Scalable
+
+[48x48/mimetypes]
+Size=48
+Context=MimeTypes
+Type=Scalable
+
+[48x48/status]
+Size=48
+Context=Status
+Type=Scalable

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Eliminar -->
+  <defs>
+    <linearGradient id="deleteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E57373"/>
+      <stop offset="100%" style="stop-color:#EF5350"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="10" y="10" width="28" height="32" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papelera -->
+  <rect x="8" y="12" width="28" height="30" rx="2" fill="url(#deleteGrad)" stroke="#E53935" stroke-width="1"/>
+  
+  <!-- Tapa -->
+  <rect x="6" y="8" width="32" height="4" rx="2" fill="#A9A9A9" stroke="#808080" stroke-width="0.5"/>
+  <rect x="18" y="4" width="8" height="6" rx="1" fill="#808080"/>
+  
+  <!-- Líneas -->
+  <line x1="16" y1="18" x2="16" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <line x1="22" y1="18" x2="22" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <line x1="28" y1="18" x2="28" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Brillo -->
+  <rect x="10" y="14" width="24" height="4" rx="2" fill="white" opacity="0.3"/>
+</svg>

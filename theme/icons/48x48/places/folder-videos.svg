@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Carpeta de Videos -->
+  <defs>
+    <linearGradient id="vidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8A65"/>
+      <stop offset="100%" style="stop-color:#FF7043"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="6" y="14" width="36" height="26" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Carpeta trasera -->
+  <path d="M 4,14 L 4,36 Q 4,38 6,38 L 42,38 Q 44,38 44,36 L 44,14 Q 44,12 42,12 L 20,12 L 17,8 L 6,8 Q 4,8 4,10 Z" 
+        fill="#A9A9A9" stroke="#808080" stroke-width="0.5"/>
+  
+  <!-- Carpeta delantera -->
+  <path d="M 4,18 L 4,38 Q 4,40 6,40 L 42,40 Q 44,40 44,38 L 44,18 Q 44,16 42,16 L 6,16 Q 4,16 4,18 Z" 
+        fill="url(#vidGrad)" stroke="#FF5722" stroke-width="0.5"/>
+  
+  <!-- Play button -->
+  <circle cx="24" cy="28" r="6" fill="#2D2D2D" opacity="0.7"/>
+  <path d="M 22,24 L 30,28 L 22,32 Z" fill="white"/>
+  
+  <!-- Brillo -->
+  <path d="M 6,18 L 42,18 L 42,20 L 6,20 Z" fill="white" opacity="0.3"/>
+</svg>

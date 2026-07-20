@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Gestor de archivos (Thunar) -->
+  <defs>
+    <linearGradient id="fmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB5C5"/>
+      <stop offset="100%" style="stop-color:#FF91A4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="6" y="10" width="36" height="32" rx="3" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Ventana -->
+  <rect x="4" y="8" width="36" height="30" rx="3" fill="white" stroke="#A9A9A9" stroke-width="1"/>
+  
+  <!-- Barra de título -->
+  <rect x="4" y="8" width="36" height="6" rx="3" fill="url(#fmGrad)"/>
+  <rect x="4" y="11" width="36" height="3" fill="url(#fmGrad)"/>
+  
+  <!-- Botones -->
+  <circle cx="10" cy="11" r="1.5" fill="#FF91A4"/>
+  <circle cx="15" cy="11" r="1.5" fill="#FFD54F"/>
+  <circle cx="20" cy="11" r="1.5" fill="#81C784"/>
+  
+  <!-- Barra lateral -->
+  <rect x="4" y="14" width="10" height="24" fill="#E8E8E8"/>
+  
+  <!-- Carpetas en lateral -->
+  <rect x="6" y="16" width="6" height="4" rx="1" fill="#FFB5C5"/>
+  <rect x="6" y="22" width="6" height="4" rx="1" fill="#64B5F6"/>
+  <rect x="6" y="28" width="6" height="4" rx="1" fill="#81C784"/>
+  
+  <!-- Contenido -->
+  <rect x="16" y="16" width="6" height="6" rx="1" fill="#FFB5C5"/>
+  <rect x="24" y="16" width="6" height="6" rx="1" fill="#FFB5C5"/>
+  <rect x="16" y="24" width="6" height="6" rx="1" fill="#E8E8E8"/>
+  <rect x="24" y="24" width="6" height="6" rx="1" fill="#E8E8E8"/>
+</svg>

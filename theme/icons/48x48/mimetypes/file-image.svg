@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Archivo de imagen -->
+  <defs>
+    <linearGradient id="imgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784"/>
+      <stop offset="100%" style="stop-color:#64B5F6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="10" y="6" width="28" height="36" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papel -->
+  <rect x="8" y="4" width="28" height="36" rx="2" fill="white" stroke="#A9A9A9" stroke-width="0.5"/>
+  
+  <!-- Marco de imagen -->
+  <rect x="12" y="10" width="20" height="16" rx="1" fill="#E8E8E8" stroke="#A9A9A9" stroke-width="0.5"/>
+  
+  <!-- Paisaje simple -->
+  <circle cx="18" cy="16" r="3" fill="#FFD1DC"/>
+  <path d="M 12,26 L 18,18 L 22,22 L 26,16 L 32,26 Z" fill="url(#imgGrad)" opacity="0.8"/>
+  
+  <!-- Líneas decorativas -->
+  <rect x="12" y="30" width="16" height="2" rx="1" fill="#FFB5C5" opacity="0.6"/>
+  <rect x="12" y="34" width="10" height="2" rx="1" fill="#E8E8E8"/>
+  
+  <!-- Esquina doblada -->
+  <path d="M 28,4 L 36,4 L 36,12 Z" fill="#E8E8E8"/>
+</svg>

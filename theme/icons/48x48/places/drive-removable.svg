@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- USB/Dispositivo removible -->
+  <defs>
+    <linearGradient id="usbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB5C5"/>
+      <stop offset="100%" style="stop-color:#FF91A4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="14" y="6" width="20" height="36" rx="3" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Cuerpo USB -->
+  <rect x="12" y="4" width="20" height="36" rx="3" fill="url(#usbGrad)" stroke="#FF91A4" stroke-width="1"/>
+  
+  <!-- Conector -->
+  <rect x="16" y="34" width="12" height="8" rx="1" fill="#A9A9A9" stroke="#808080" stroke-width="0.5"/>
+  <rect x="18" y="36" width="8" height="4" fill="#2D2D2D"/>
+  
+  <!-- LED -->
+  <circle cx="22" cy="12" r="2" fill="#81C784">
+    <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Línea decorativa -->
+  <rect x="16" y="18" width="12" height="2" rx="1" fill="white" opacity="0.4"/>
+  <rect x="16" y="22" width="8" height="2" rx="1" fill="white" opacity="0.3"/>
+  <rect x="16" y="26" width="10" height="2" rx="1" fill="white" opacity="0.2"/>
+  
+  <!-- Brillo -->
+  <rect x="14" y="6" width="16" height="8" rx="4" fill="white" opacity="0.3"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Archivo comprimido/ZIP -->
+  <defs>
+    <linearGradient id="zipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD54F"/>
+      <stop offset="100%" style="stop-color:#FFC107"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="10" y="6" width="28" height="36" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papel -->
+  <rect x="8" y="4" width="28" height="36" rx="2" fill="white" stroke="#A9A9A9" stroke-width="0.5"/>
+  
+  <!-- Cremallera -->
+  <rect x="20" y="4" width="4" height="36" fill="url(#zipGrad)"/>
+  <rect x="19" y="10" width="6" height="3" rx="1" fill="#FFA000"/>
+  <rect x="19" y="16" width="6" height="3" rx="1" fill="#FFA000"/>
+  <rect x="19" y="22" width="6" height="3" rx="1" fill="#FFA000"/>
+  <rect x="19" y="28" width="6" height="3" rx="1" fill="#FFA000"/>
+  
+  <!-- Etiqueta -->
+  <rect x="10" y="32" width="8" height="6" rx="1" fill="url(#zipGrad)"/>
+  <text x="14" y="37" font-family="monospace" font-size="5" fill="#2D2D2D" text-anchor="middle">ZIP</text>
+  
+  <!-- Esquina doblada -->
+  <path d="M 28,4 L 36,4 L 36,12 Z" fill="#FFD54F" opacity="0.5"/>
+</svg>

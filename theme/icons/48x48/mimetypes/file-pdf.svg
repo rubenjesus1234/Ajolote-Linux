@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Archivo PDF -->
+  <defs>
+    <linearGradient id="pdfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E57373"/>
+      <stop offset="100%" style="stop-color:#EF5350"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="10" y="6" width="28" height="36" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papel -->
+  <rect x="8" y="4" width="28" height="36" rx="2" fill="white" stroke="#A9A9A9" stroke-width="0.5"/>
+  
+  <!-- Etiqueta PDF -->
+  <rect x="12" y="24" width="16" height="10" rx="2" fill="url(#pdfGrad)"/>
+  <text x="20" y="32" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">PDF</text>
+  
+  <!-- Líneas decorativas -->
+  <rect x="12" y="10" width="18" height="2" rx="1" fill="#E8E8E8"/>
+  <rect x="12" y="14" width="14" height="2" rx="1" fill="#E8E8E8"/>
+  <rect x="12" y="18" width="16" height="2" rx="1" fill="#E8E8E8"/>
+  
+  <!-- Esquina doblada -->
+  <path d="M 28,4 L 36,4 L 36,12 Z" fill="#E8E8E8"/>
+</svg>

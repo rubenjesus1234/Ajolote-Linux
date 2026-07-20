@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Radio button -->
+  <defs>
+    <linearGradient id="radioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB5C5"/>
+      <stop offset="100%" style="stop-color:#FF91A4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <circle cx="22" cy="22" r="14" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Círculo exterior -->
+  <circle cx="20" cy="20" r="14" fill="url(#radioGrad)" stroke="#FF91A4" stroke-width="2"/>
+  
+  <!-- Brillo -->
+  <ellipse cx="14" cy="14" rx="5" ry="4" fill="white" opacity="0.3" transform="rotate(-30 14 14)"/>
+  
+  <!-- Círculo interior -->
+  <circle cx="20" cy="20" r="6" fill="white"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Reiniciar -->
+  <defs>
+    <linearGradient id="restartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD54F"/>
+      <stop offset="100%" style="stop-color:#FFC107"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <circle cx="24" cy="26" r="16" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Círculo -->
+  <circle cx="24" cy="24" r="16" fill="url(#restartGrad)" stroke="#FFA000" stroke-width="1"/>
+  
+  <!-- Brillo -->
+  <ellipse cx="18" cy="16" rx="5" ry="4" fill="white" opacity="0.3" transform="rotate(-30 18 16)"/>
+  
+  <!-- Flecha circular -->
+  <path d="M 24,12 A 12,12 0 1,1 12,24" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 12,18 L 12,24 L 18,24" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

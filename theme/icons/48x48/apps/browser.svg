@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Navegador web -->
+  <defs>
+    <linearGradient id="browserGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFC1CC"/>
+      <stop offset="100%" style="stop-color:#FFB5C5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="5" y="9" width="38" height="30" rx="4" fill="#000000" opacity="0.3"/>
+  
+  <!-- Ventana -->
+  <rect x="4" y="6" width="40" height="32" rx="4" fill="white" stroke="#A9A9A9" stroke-width="1"/>
+  
+  <!-- Barra de título -->
+  <rect x="4" y="6" width="40" height="8" rx="4" fill="url(#browserGrad)"/>
+  <rect x="4" y="10" width="40" height="4" fill="url(#browserGrad)"/>
+  
+  <!-- Botones de ventana -->
+  <circle cx="10" cy="10" r="2" fill="#FF91A4"/>
+  <circle cx="16" cy="10" r="2" fill="#E8E8E8"/>
+  <circle cx="22" cy="10" r="2" fill="#81C784"/>
+  
+  <!-- Barra de URL -->
+  <rect x="8" y="16" width="32" height="5" rx="2" fill="#E8E8E8" stroke="#A9A9A9" stroke-width="0.5"/>
+  <text x="10" y="20" font-family="sans-serif" font-size="3.5" fill="#808080">ajolote://</text>
+  
+  <!-- Contenido -->
+  <rect x="8" y="24" width="32" height="10" rx="1" fill="#F5F5F5"/>
+  
+  <!-- Líneas de contenido -->
+  <rect x="10" y="26" width="12" height="2" rx="1" fill="#FFB5C5"/>
+  <rect x="10" y="30" width="8" height="2" rx="1" fill="#E8E8E8"/>
+  
+  <!-- Icono de ajolote pequeño -->
+  <circle cx="34" cy="28" r="3" fill="#FF91A4"/>
+  <circle cx="33" cy="27" r="0.8" fill="#2D2D2D"/>
+  <circle cx="35" cy="27" r="0.8" fill="#2D2D2D"/>
+</svg>

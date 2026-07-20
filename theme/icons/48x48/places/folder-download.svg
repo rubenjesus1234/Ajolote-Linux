@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Descargas -->
+  <defs>
+    <linearGradient id="dlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64B5F6"/>
+      <stop offset="100%" style="stop-color:#42A5F5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Carpeta base -->
+  <path d="M 4,14 L 4,36 Q 4,38 6,38 L 42,38 Q 44,38 44,36 L 44,14 Q 44,12 42,12 L 20,12 L 17,8 L 6,8 Q 4,8 4,10 Z" 
+        fill="#A9A9A9" stroke="#808080" stroke-width="0.5"/>
+  <path d="M 4,18 L 4,38 Q 4,40 6,40 L 42,40 Q 44,40 44,38 L 44,18 Q 44,16 42,16 L 6,16 Q 4,16 4,18 Z" 
+        fill="url(#dlGrad)" stroke="#2196F3" stroke-width="0.5"/>
+  
+  <!-- Flecha de descarga -->
+  <path d="M 24,20 L 24,32" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 18,27 L 24,33 L 30,27" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Línea base -->
+  <line x1="14" y1="36" x2="34" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

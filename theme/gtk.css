@@ -1,0 +1,189 @@
+/* Ajolote Linux - Tema GTK Personalizado */
+/* Colores inspirados en ajolotes: rosa, naranja, verde */
+
+@define-color theme_bg_color #2b2b2b;
+@define-color theme_fg_color #ffffff;
+@define-color theme_base_color #1e1e1e;
+@define-color theme_text_color #ffffff;
+@define-color theme_selected_bg_color #ff6b9d;
+@define-color theme_selected_fg_color #ffffff;
+@define-color theme_tooltip_bg_color #3a3a3a;
+@define-color theme_tooltip_fg_color #ffffff;
+
+/* Colores de acento ajolote */
+@define-color ajolote_pink #ff6b9d;
+@define-color ajolote_orange #ff8a65;
+@define-color ajolote_green #81c784;
+@define-color ajolote_blue #64b5f6;
+
+/* Ventanas */
+GtkWindow {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+/* Botones */
+GtkButton {
+    background-image: none;
+    background-color: @ajolote_pink;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 12px;
+    min-height: 24px;
+}
+
+GtkButton:hover {
+    background-color: shade(@ajolote_pink, 1.1);
+}
+
+GtkButton:active {
+    background-color: shade(@ajolote_pink, 0.9);
+}
+
+/* Entry */
+GtkEntry {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+    border: 1px solid @ajolote_pink;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+GtkEntry:focus {
+    border-color: @ajolote_orange;
+}
+
+/* Scrollbar */
+GtkScrollbar {
+    background-color: @theme_bg_color;
+}
+
+GtkScrollbar slider {
+    background-color: @ajolote_pink;
+    border-radius: 4px;
+    min-width: 8px;
+}
+
+GtkScrollbar slider:hover {
+    background-color: @ajolote_orange;
+}
+
+/* Menu */
+GtkMenu {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+    border: 1px solid @ajolote_pink;
+}
+
+GtkMenuItem {
+    padding: 4px 8px;
+}
+
+GtkMenuItem:hover {
+    background-color: @ajolote_pink;
+}
+
+/* Panel */
+PanelWidget {
+    background-color: shade(@theme_bg_color, 0.9);
+}
+
+PanelApplet {
+    background-color: transparent;
+}
+
+/* Notebook (tabs) */
+GtkNotebook tab {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+    padding: 4px 8px;
+    border: 1px solid @ajolote_pink;
+}
+
+GtkNotebook tab:checked {
+    background-color: @ajolote_pink;
+}
+
+/* TreeView */
+GtkTreeView {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+}
+
+GtkTreeView:selected {
+    background-color: @theme_selected_bg_color;
+}
+
+/* ComboBox */
+GtkComboBox button {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+    border: 1px solid @ajolote_pink;
+}
+
+/* Progress bar */
+GtkProgressBar {
+    background-color: @theme_base_color;
+    border: 1px solid @ajolote_pink;
+    border-radius: 4px;
+}
+
+GtkProgressBar trough {
+    background-color: @theme_base_color;
+}
+
+GtkProgressBar progress {
+    background-color: @ajolote_pink;
+    border-radius: 4px;
+}
+
+/* Switch */
+GtkSwitch {
+    background-color: @theme_base_color;
+    border: 2px solid @ajolote_pink;
+    border-radius: 12px;
+}
+
+GtkSwitch:checked {
+    background-color: @ajolote_pink;
+}
+
+/* Scale (slider) */
+GtkScale trough {
+    background-color: @theme_base_color;
+    border: 1px solid @ajolote_pink;
+}
+
+GtkScale slider {
+    background-color: @ajolote_pink;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+GtkScale slider:hover {
+    background-color: @ajolote_orange;
+}
+
+/* Dialog */
+GtkDialog {
+    background-color: @theme_bg_color;
+}
+
+/* HeaderBar */
+GtkHeaderBar {
+    background-color: shade(@theme_bg_color, 0.8);
+    color: @theme_fg_color;
+}
+
+/* Sidebar */
+GtkSidebar {
+    background-color: shade(@theme_bg_color, 0.9);
+}
+
+/* Tooltip */
+GtkTooltip {
+    background-color: @theme_tooltip_bg_color;
+    color: @theme_tooltip_fg_color;
+    border: 1px solid @ajolote_pink;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Red/Network -->
+  <defs>
+    <linearGradient id="netGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64B5F6"/>
+      <stop offset="100%" style="stop-color:#42A5F5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <circle cx="24" cy="26" r="16" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Círculo -->
+  <circle cx="24" cy="24" r="16" fill="url(#netGrad)" stroke="#2196F3" stroke-width="1"/>
+  
+  <!-- Brillo -->
+  <ellipse cx="18" cy="16" rx="5" ry="4" fill="white" opacity="0.3" transform="rotate(-30 18 16)"/>
+  
+  <!-- Señal wifi -->
+  <path d="M 24,30 L 24,30" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 18,26 Q 24,20 30,26" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 14,22 Q 24,12 34,22" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 10,18 Q 24,4 38,18" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

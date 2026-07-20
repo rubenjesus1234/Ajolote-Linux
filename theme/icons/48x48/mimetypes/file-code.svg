@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Código -->
+  <defs>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784"/>
+      <stop offset="100%" style="stop-color:#66BB6A"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="10" y="6" width="28" height="36" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papel -->
+  <rect x="8" y="4" width="28" height="36" rx="2" fill="#1A1A1A" stroke="#808080" stroke-width="0.5"/>
+  
+  <!-- Código < > -->
+  <text x="12" y="20" font-family="monospace" font-size="10" fill="#FF91A4">&lt;</text>
+  <text x="30" y="20" font-family="monospace" font-size="10" fill="#FF91A4">&gt;</text>
+  
+  <!-- Línea de código -->
+  <rect x="20" y="14" width="8" height="2" rx="1" fill="url(#codeGrad)"/>
+  
+  <!-- Más líneas -->
+  <rect x="14" y="24" width="6" height="2" rx="1" fill="#64B5F6" opacity="0.8"/>
+  <rect x="22" y="24" width="4" height="2" rx="1" fill="#FFD54F" opacity="0.8"/>
+  <rect x="28" y="24" width="6" height="2" rx="1" fill="#FF91A4" opacity="0.8"/>
+  
+  <rect x="14" y="28" width="10" height="2" rx="1" fill="#CE93D8" opacity="0.8"/>
+  <rect x="26" y="28" width="4" height="2" rx="1" fill="#81C784" opacity="0.8"/>
+  
+  <rect x="14" y="32" width="4" height="2" rx="1" fill="#64B5F6" opacity="0.8"/>
+  <rect x="20" y="32" width="8" height="2" rx="1" fill="#FFD54F" opacity="0.8"/>
+</svg>

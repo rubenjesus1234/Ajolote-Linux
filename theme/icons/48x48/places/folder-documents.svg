@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Documentos -->
+  <defs>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFC1CC"/>
+      <stop offset="100%" style="stop-color:#FFB5C5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra -->
+  <rect x="10" y="6" width="28" height="36" rx="2" fill="#2D2D2D" opacity="0.2"/>
+  
+  <!-- Papel trasero -->
+  <rect x="12" y="4" width="24" height="32" rx="2" fill="#E8E8E8" stroke="#A9A9A9" stroke-width="0.5"/>
+  
+  <!-- Papel delantero -->
+  <rect x="8" y="8" width="24" height="32" rx="2" fill="url(#docGrad)" stroke="#FF91A4" stroke-width="0.5"/>
+  
+  <!-- Líneas de texto -->
+  <line x1="12" y1="16" x2="28" y2="16" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="20" x2="24" y2="20" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="24" x2="26" y2="24" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="28" x2="20" y2="28" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Esquina doblada -->
+  <path d="M 24,8 L 32,8 L 32,16 Z" fill="#FF91A4" opacity="0.4"/>
+</svg>
