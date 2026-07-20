@@ -92,6 +92,48 @@ if [ "$PKG_MANAGER" = "apt" ]; then
     fi
 fi
 
+# Instalar XSpaceWar - space fighter
+echo -e "${YELLOW}Instalando XSpaceWar-AI...${NC}"
+mkdir -p /home/ajolote/juegos/xspacewar
+wget -q "https://github.com/CryptoJones/XSpaceWar-AI/releases/download/v3.1.41/xspacewar-ai-linux-x86_64.zip" -O /tmp/xspacewar.zip 2>/dev/null || true
+if [ -f /tmp/xspacewar.zip ]; then
+    unzip -o /tmp/xspacewar.zip -d /home/ajolote/juegos/xspacewar/ 2>/dev/null || true
+    chmod +x /home/ajolote/juegos/xspacewar/xspacewar-ai.x86_64 2>/dev/null || true
+fi
+
+# Crear acceso directo para XSpaceWar
+cat > /home/ajolote/.local/share/applications/xspacewar.desktop << 'XSWDESKTOP'
+[Desktop Entry]
+Name=XSpaceWar-AI
+Comment=Space fighter con IA
+Exec=/home/ajolote/juegos/xspacewar/xspacewar-ai.x86_64
+Icon=/home/ajolote/.themes/ajolote/icons/48x48/apps/ajolote-os.svg
+Terminal=false
+Type=Application
+Categories=Game;Action;
+XSWDESKTOP
+
+# Instalar Konna - plataformero
+echo -e "${YELLOW}Instalando Konna...${NC}"
+mkdir -p /home/ajolote/juegos/konna
+wget -q "https://tossu.itch.io/konna/download/eyJpZCI6MTI3OTIwOSwiZXhwaXJlcyI6MTc1MzAwNzkyMH0%3D.gYsrxI8UVrEQ61Kfj8BTpBQl9SI%3D" -O /tmp/konna.zip 2>/dev/null || true
+if [ -f /tmp/konna.zip ]; then
+    unzip -o /tmp/konna.zip -d /home/ajolote/juegos/konna/ 2>/dev/null || true
+    chmod +x /home/ajolote/juegos/konna/KonnaLinux.x86_64 2>/dev/null || true
+fi
+
+# Crear acceso directo para Konna
+cat > /home/ajolote/.local/share/applications/konna.desktop << 'KONNADESKTOP'
+[Desktop Entry]
+Name=Konna
+Comment=Plataformero - una rana cerca del océano
+Exec=/home/ajolote/juegos/konna/KonnaLinux.x86_64
+Icon=/home/ajolote/.themes/ajolote/icons/48x48/apps/ajolote-os.svg
+Terminal=false
+Type=Application
+Categories=Game;Platformer;
+KONNADESKTOP
+
 # Instalar Ruffle (emulador Flash) y PPGD
 echo -e "${YELLOW}Instalando Ruffle y PPGD: Battle in Megaville...${NC}"
 apt install -y ruffle 2>/dev/null || (
