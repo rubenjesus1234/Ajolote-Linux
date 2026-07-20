@@ -85,7 +85,9 @@ if [ "$PKG_MANAGER" = "apt" ]; then
     # Taisei - Bullet hell Touhou-like
     apt install -y taisei 2>/dev/null || true
     
-    # Feed Axel - Juego de axolotls (skip, repo no disponible)
+    # Feed Axel - Juego de axolotls (reemplazado por CATAI-Linux)
+    pip3 install catai-linux 2>/dev/null || true
+    true
 fi
 
 # Instalar XSpaceWar - space fighter
