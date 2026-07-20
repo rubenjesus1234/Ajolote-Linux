@@ -85,11 +85,7 @@ if [ "$PKG_MANAGER" = "apt" ]; then
     # Taisei - Bullet hell Touhou-like
     apt install -y taisei 2>/dev/null || true
     
-    # Feed Axel - Juego de axolotls
-    if [ ! -d "/home/ajolote/feed-axel" ]; then
-        apt install -y git 2>/dev/null
-        git clone https://github.com/ajolote-linux/feed-axel.git /home/ajolote/feed-axel 2>/dev/null || true
-    fi
+    # Feed Axel - Juego de axolotls (skip, repo no disponible)
 fi
 
 # Instalar XSpaceWar - space fighter
