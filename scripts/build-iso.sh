@@ -17,7 +17,7 @@ NC='\033[0m'
 check_dependencies() {
     echo -e "${YELLOW}Verificando dependencias...${NC}"
     
-    DEPS=("debootstrap" "squashfs-tools" "xorriso" "mtools" "dosfstools")
+    DEPS=("debootstrap" "squashfs-tools-ng" "xorriso" "mtools" "dosfstools")
     
     for dep in "${DEPS[@]}"; do
         if ! command -v $dep &> /dev/null; then
