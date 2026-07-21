@@ -100,6 +100,7 @@ if [ -f /tmp/xspacewar.zip ]; then
 fi
 
 # Crear acceso directo para XSpaceWar
+mkdir -p /home/ajolote/.local/share/applications
 cat > /home/ajolote/.local/share/applications/xspacewar.desktop << 'XSWDESKTOP'
 [Desktop Entry]
 Name=XSpaceWar-AI
