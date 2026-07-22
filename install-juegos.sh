@@ -67,6 +67,42 @@ fi
 echo -e "${YELLOW}[7/8] Instalando Konna...${NC}"
 mkdir -p /home/ajolote/juegos/konna
 
+# 8. Juegos Flash (via Ruffle)
+echo -e "${YELLOW}[8/13] Descargando juegos Flash...${NC}"
+mkdir -p /home/ajolote/juegos/flash
+
+# Alien Hominid (2002, Newgrounds)
+wget -q "https://archive.org/download/flash_alien_hominid/alien%20hominid.swf" -O /home/ajolote/juegos/flash/alien-hominid.swf 2>/dev/null || true
+
+# Learn to Fly (2004)
+wget -q "https://archive.org/download/flash_learn-to-fly/learn%20to%20fly.swf" -O /home/ajolote/juegos/flash/learn-to-fly.swf 2>/dev/null || true
+
+# Fancy Pants Adventure (2006, Brad Borne)
+wget -q "https://archive.org/download/fancypantsadventure_202011/Fancy%20Pants%20Adventure.swf" -O /home/ajolote/juegos/flash/fancy-pants-adventure.swf 2>/dev/null || true
+
+# Super Smash Flash (2006, McLeodGaming)
+wget -q "https://archive.org/download/supersmashflash_swf/Super%20Smash%20Flash.swf" -O /home/ajolote/juegos/flash/super-smash-flash.swf 2>/dev/null || true
+
+# Plants vs Zombies Flash (2009, PopCap)
+wget -q "https://archive.org/download/plants-vs-zombies-swf/Plants%20vs.%20Zombies.swf" -O /home/ajolote/juegos/flash/plants-vs-zombies.swf 2>/dev/null || true
+
+# Crear accesos directos para juegos Flash
+for swf in /home/ajolote/juegos/flash/*.swf; do
+    name=$(basename "$swf" .swf)
+    cat > "/home/ajolote/.local/share/applications/flash-${name}.desktop" << DESKTOP
+[Desktop Entry]
+Name=${name}
+Comment=Juego Flash - via Ruffle
+Exec=ruffle ${swf}
+Terminal=false
+Type=Application
+Categories=Game;
+DESKTOP
+done
+
+echo "Juegos Flash instalados:" 2>/dev/null || true
+ls /home/ajolote/juegos/flash/*.swf 2>/dev/null | wc -l 2>/dev/null || true
+
 # 8. Ajolote Pet (mascota virtual)
 echo -e "${YELLOW}[8/8] Creando Ajolote Pet...${NC}"
 mkdir -p /home/ajolote/ajolote-pet
