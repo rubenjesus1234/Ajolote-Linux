@@ -68,7 +68,7 @@ echo -e "${YELLOW}[7/8] Instalando Konna...${NC}"
 mkdir -p /home/ajolote/juegos/konna
 
 # 8. Juegos Flash (via Ruffle)
-echo -e "${YELLOW}[8/13] Descargando juegos Flash...${NC}"
+echo -e "${YELLOW}[8/12] Descargando juegos Flash...${NC}"
 mkdir -p /home/ajolote/juegos/flash
 
 # Alien Hominid (2002, Newgrounds)
@@ -85,6 +85,18 @@ wget -q "https://archive.org/download/supersmashflash_swf/Super%20Smash%20Flash.
 
 # Plants vs Zombies Flash (2009, PopCap)
 wget -q "https://archive.org/download/plants-vs-zombies-swf/Plants%20vs.%20Zombies.swf" -O /home/ajolote/juegos/flash/plants-vs-zombies.swf 2>/dev/null || true
+
+# Ultimate Flash Sonic (2004)
+wget -q "https://archive.org/download/adobeflash-ultimateflashsonic/ultimate%20flash%20sonic.swf" -O /home/ajolote/juegos/flash/ultimate-flash-sonic.swf 2>/dev/null || true
+
+# Super Mario Flash (2003, Pouetpu)
+wget -q "https://archive.org/download/super_mario_flash_1.3/super_mario_flash_1.3.swf" -O /home/ajolote/juegos/flash/super-mario-flash.swf 2>/dev/null || true
+
+# Newgrounds Rumble (2007, Newgrounds)
+wget -q "https://archive.org/download/newgrounds-rumble/Newgrounds%20Rumble.swf" -O /home/ajolote/juegos/flash/newgrounds-rumble.swf 2>/dev/null || true
+
+# Domo-Kun Angry Smashfest (2008, Newgrounds)
+wget -q "https://archive.org/download/domo-kun-angry-smashfest/Domo-Kun%20Angry%20Smashfest.swf" -O /home/ajolote/juegos/flash/domo-kun-angry-smashfest.swf 2>/dev/null || true
 
 # Crear accesos directos para juegos Flash
 for swf in /home/ajolote/juegos/flash/*.swf; do
@@ -103,8 +115,68 @@ done
 echo "Juegos Flash instalados:" 2>/dev/null || true
 ls /home/ajolote/juegos/flash/*.swf 2>/dev/null | wc -l 2>/dev/null || true
 
-# 8. Ajolote Pet (mascota virtual)
-echo -e "${YELLOW}[8/8] Creando Ajolote Pet...${NC}"
+# 9. Juegos Nativos Linux
+echo -e "${YELLOW}[9/12] Instalando juegos nativos Linux...${NC}"
+
+# Blob Wars: Metal Blob Assault
+apt install -y blobwars 2>/dev/null || true
+
+# Moon Buggy
+apt install -y moon-buggy 2>/dev/null || true
+
+# 10. MMORPGs Online (navegador)
+echo -e "${YELLOW}[10/12] Configurando MMORPGs online...${NC}"
+mkdir -p /home/ajolote/juegos/online
+
+# Stendhal
+cat > /home/ajolote/juegos/online/stendhal.desktop << 'EOF'
+[Desktop Entry]
+Name=Stendhal MMORPG
+Comment=Juego de rol multijugador masivo online
+Exec=firefox https://stendhalgame.org
+Terminal=false
+Type=Application
+Categories=Game;MMORPG;
+EOF
+
+# Ryzom
+cat > /home/ajolote/juegos/online/ryzom.desktop << 'EOF'
+[Desktop Entry]
+Name=Ryzom MMORPG
+Comment=Mundo abierto multijugador online
+Exec=firefox https://www.ryzom.com
+Terminal=false
+Type=Application
+Categories=Game;MMORPG;
+EOF
+
+# Veck IO
+cat > /home/ajolote/juegos/online/veck-io.desktop << 'EOF'
+[Desktop Entry]
+Name=Veck IO
+Comment=FPS 3D multijugador online
+Exec=firefox https://veck-io.org
+Terminal=false
+Type=Application
+Categories=Game;FPS;
+EOF
+
+# Voidgun
+cat > /home/ajolote/juegos/online/voidgun.desktop << 'EOF'
+[Desktop Entry]
+Name=Voidgun
+Comment=Shooter espacial multijugador
+Exec=firefox https://voidgun.itch.io/voidgun
+Terminal=false
+Type=Application
+Categories=Game;Shooter;
+EOF
+
+# Mover accesos directos online
+mv /home/ajolote/juegos/online/*.desktop /home/ajolote/.local/share/applications/ 2>/dev/null || true
+
+# 11. Ajolote Pet (mascota virtual)
+echo -e "${YELLOW}[11/12] Creando Ajolote Pet...${NC}"
 mkdir -p /home/ajolote/ajolote-pet
 cat > /home/ajolote/ajolote-pet/ajolote-pet.py << 'PYEOF'
 #!/usr/bin/env python3
@@ -212,7 +284,7 @@ chown -R ajolote:ajolote /home/ajolote/ajolote-pet
 echo ""
 echo -e "${GREEN}=== Paquete de juegos instalado ===${NC}"
 echo ""
-echo "Juegos instalados:"
+echo "Juegos nativos:"
 echo "  - Luanti (Minetest)"
 echo "  - Tuxemon (RPG tipo Pokemon)"
 echo "  - Valyria Tear (JRPG)"
@@ -221,3 +293,22 @@ echo "  - XSpaceWar-AI (Space fighter)"
 echo "  - Ruffle + PPGD (Powerpuff Girls)"
 echo "  - Konna (Plataformero)"
 echo "  - Ajolote Pet (Mascota virtual)"
+echo "  - Blob Wars (Plataformero accion)"
+echo "  - Moon Buggy (Carrera lunar)"
+echo ""
+echo "Juegos Flash (via Ruffle):"
+echo "  - Alien Hominid"
+echo "  - Learn to Fly"
+echo "  - Fancy Pants Adventure"
+echo "  - Super Smash Flash"
+echo "  - Plants vs Zombies"
+echo "  - Ultimate Flash Sonic"
+echo "  - Super Mario Flash"
+echo "  - Newgrounds Rumble"
+echo "  - Domo-Kun Angry Smashfest"
+echo ""
+echo "MMORPGs Online:"
+echo "  - Stendhal (MMORPG)"
+echo "  - Ryzom (MMORPG)"
+echo "  - Veck IO (FPS 3D)"
+echo "  - Voidgun (Shooter espacial)"
