@@ -130,6 +130,24 @@ apt install -y blobwars 2>/dev/null || true
 # Moon Buggy
 apt install -y moon-buggy 2>/dev/null || true
 
+# Celeste 64: Fragments of the Mountain (plataformero 3D - gratis)
+echo -e "${YELLOW}Instalando Celeste 64...${NC}"
+mkdir -p /home/ajolote/juegos/celeste-64
+wget -q "https://github.com/NoelFB/Celeste/releases/download/v1.1.1/Celeste64-v1.1.1-Linux-x64.zip" -O /tmp/celeste64.zip 2>/dev/null || true
+if [ -f /tmp/celeste64.zip ]; then
+    unzip -o /tmp/celeste64.zip -d /home/ajolote/juegos/celeste-64/ 2>/dev/null || true
+    chmod +x /home/ajolote/juegos/celeste-64/Celeste64 2>/dev/null || true
+    cat > /home/ajolote/.local/share/applications/celeste-64.desktop << 'EOF'
+[Desktop Entry]
+Name=Celeste 64
+Comment=Plataformero 3D - gratis
+Exec=/home/ajolote/juegos/celeste-64/Celeste64
+Terminal=false
+Type=Application
+Categories=Game;Platformer;
+EOF
+fi
+
 # Spiral Knights (RPG dungeon crawling - nativo)
 echo -e "${YELLOW}Instalando Spiral Knights...${NC}"
 mkdir -p /home/ajolote/juegos/spiral-knights
@@ -350,6 +368,8 @@ echo "  - Konna (Plataformero)"
 echo "  - Ajolote Pet (Mascota virtual)"
 echo "  - Blob Wars (Plataformero accion)"
 echo "  - Moon Buggy (Carrera lunar)"
+echo "  - Celeste 64 (Plataformero 3D - gratis)"
+echo "  - Spiral Knights (RPG dungeon crawling)"
 echo ""
 echo "Juegos Flash (via Ruffle):"
 echo "  - Alien Hominid"
