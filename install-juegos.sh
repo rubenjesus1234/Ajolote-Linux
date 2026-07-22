@@ -98,6 +98,12 @@ wget -q "https://archive.org/download/newgrounds-rumble/Newgrounds%20Rumble.swf"
 # Domo-Kun Angry Smashfest (2008, Newgrounds)
 wget -q "https://archive.org/download/domo-kun-angry-smashfest/Domo-Kun%20Angry%20Smashfest.swf" -O /home/ajolote/juegos/flash/domo-kun-angry-smashfest.swf 2>/dev/null || true
 
+# Super Smash Flash 2 (McLeodGaming)
+wget -q "https://archive.org/download/0.5a_20231121/SSF2_v0.5a.swf" -O /home/ajolote/juegos/flash/super-smash-flash-2.swf 2>/dev/null || true
+
+# Mega Man Flash (fan game)
+wget -q "https://archive.org/download/mega-man-flash/Mega%20Man%20Flash.swf" -O /home/ajolote/juegos/flash/mega-man-flash.swf 2>/dev/null || true
+
 # Crear accesos directos para juegos Flash
 for swf in /home/ajolote/juegos/flash/*.swf; do
     name=$(basename "$swf" .swf)
@@ -170,6 +176,39 @@ Exec=firefox https://voidgun.itch.io/voidgun
 Terminal=false
 Type=Application
 Categories=Game;Shooter;
+EOF
+
+# BrowserRTS
+cat > /home/ajolote/juegos/online/browserrts.desktop << 'EOF'
+[Desktop Entry]
+Name=BrowserRTS
+Comment=RTS online con miles de unidades
+Exec=firefox https://browserrts.com
+Terminal=false
+Type=Application
+Categories=Game;RTS;
+EOF
+
+# InfiniteX
+cat > /home/ajolote/juegos/online/infinitex.desktop << 'EOF'
+[Desktop Entry]
+Name=InfiniteX
+Comment=MOBA 3v3 en navegador
+Exec=firefox https://infinitex.games
+Terminal=false
+Type=Application
+Categories=Game;MOBA;
+EOF
+
+# Wakfu (MMORPG tactico anime)
+cat > /home/ajolote/juegos/online/wakfu.desktop << 'EOF'
+[Desktop Entry]
+Name=Wakfu
+Comment=MMORPG tactico anime - gratis
+Exec=firefox https://www.wakfu.com/en/mmorpg/play
+Terminal=false
+Type=Application
+Categories=Game;MMORPG;
 EOF
 
 # Mover accesos directos online
