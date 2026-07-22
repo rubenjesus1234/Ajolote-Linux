@@ -130,8 +130,26 @@ apt install -y blobwars 2>/dev/null || true
 # Moon Buggy
 apt install -y moon-buggy 2>/dev/null || true
 
-# 10. MMORPGs Online (navegador)
-echo -e "${YELLOW}[10/12] Configurando MMORPGs online...${NC}"
+# 10. Wakfu (MMORPG tactico anime - nativo)
+echo -e "${YELLOW}[10/13] Instalando Wakfu...${NC}"
+mkdir -p /home/ajolote/juegos/wakfu
+wget -q "http://download.wakfu.com/full/linux/wakfu-x86.tar.gz" -O /tmp/wakfu.tar.gz 2>/dev/null || true
+if [ -f /tmp/wakfu.tar.gz ]; then
+    tar -xzf /tmp/wakfu.tar.gz -C /home/ajolote/juegos/wakfu/ 2>/dev/null || true
+    chmod +x /home/ajolote/juegos/wakfu/Wakfu 2>/dev/null || true
+    cat > /home/ajolote/.local/share/applications/wakfu.desktop << 'EOF'
+[Desktop Entry]
+Name=Wakfu
+Comment=MMORPG tactico anime - gratis
+Exec=/home/ajolote/juegos/wakfu/Wakfu
+Terminal=false
+Type=Application
+Categories=Game;MMORPG;
+EOF
+fi
+
+# 11. MMORPGs Online (navegador)
+echo -e "${YELLOW}[11/13] Configurando MMORPGs online...${NC}"
 mkdir -p /home/ajolote/juegos/online
 
 # Stendhal
@@ -200,22 +218,11 @@ Type=Application
 Categories=Game;MOBA;
 EOF
 
-# Wakfu (MMORPG tactico anime)
-cat > /home/ajolote/juegos/online/wakfu.desktop << 'EOF'
-[Desktop Entry]
-Name=Wakfu
-Comment=MMORPG tactico anime - gratis
-Exec=firefox https://www.wakfu.com/en/mmorpg/play
-Terminal=false
-Type=Application
-Categories=Game;MMORPG;
-EOF
-
 # Mover accesos directos online
 mv /home/ajolote/juegos/online/*.desktop /home/ajolote/.local/share/applications/ 2>/dev/null || true
 
-# 11. Ajolote Pet (mascota virtual)
-echo -e "${YELLOW}[11/12] Creando Ajolote Pet...${NC}"
+# 12. Ajolote Pet (mascota virtual)
+echo -e "${YELLOW}[12/13] Creando Ajolote Pet...${NC}"
 mkdir -p /home/ajolote/ajolote-pet
 cat > /home/ajolote/ajolote-pet/ajolote-pet.py << 'PYEOF'
 #!/usr/bin/env python3
@@ -340,14 +347,19 @@ echo "  - Alien Hominid"
 echo "  - Learn to Fly"
 echo "  - Fancy Pants Adventure"
 echo "  - Super Smash Flash"
+echo "  - Super Smash Flash 2"
 echo "  - Plants vs Zombies"
 echo "  - Ultimate Flash Sonic"
 echo "  - Super Mario Flash"
 echo "  - Newgrounds Rumble"
 echo "  - Domo-Kun Angry Smashfest"
+echo "  - Mega Man Flash"
 echo ""
 echo "MMORPGs Online:"
+echo "  - Wakfu (MMORPG tactico anime - nativo)"
 echo "  - Stendhal (MMORPG)"
 echo "  - Ryzom (MMORPG)"
 echo "  - Veck IO (FPS 3D)"
 echo "  - Voidgun (Shooter espacial)"
+echo "  - BrowserRTS (RTS online)"
+echo "  - InfiniteX (MOBA 3v3)"
