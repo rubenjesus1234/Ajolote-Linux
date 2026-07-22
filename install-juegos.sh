@@ -130,6 +130,15 @@ apt install -y blobwars 2>/dev/null || true
 # Moon Buggy
 apt install -y moon-buggy 2>/dev/null || true
 
+# Spiral Knights (RPG dungeon crawling - nativo)
+echo -e "${YELLOW}Instalando Spiral Knights...${NC}"
+mkdir -p /home/ajolote/juegos/spiral-knights
+wget -q "https://gamemedia.spiralknights.com/spiral/client/spiral-install.bin" -O /tmp/spiral-install.bin 2>/dev/null || true
+if [ -f /tmp/spiral-install.bin ]; then
+    chmod +x /tmp/spiral-install.bin
+    /tmp/spiral-install.bin -o /home/ajolote/juegos/spiral-knights 2>/dev/null || true
+fi
+
 # 10. Wakfu (MMORPG tactico anime - nativo)
 echo -e "${YELLOW}[10/13] Instalando Wakfu...${NC}"
 mkdir -p /home/ajolote/juegos/wakfu
@@ -366,4 +375,5 @@ echo "  - InfiniteX (MOBA 3v3)"
 echo ""
 echo "Juegos Steam (instalar manualmente):"
 echo "  - Space Expedition (gratis, via Proton)"
+echo "  - Bit Heroes Quest (gratis, pixel RPG)"
 echo "  - Celeste (de pago, nativo Linux)"
